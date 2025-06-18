@@ -10,9 +10,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-os.chdir('D:\\vsproject\\pythondataanalysis')
-
-heart_data = pd.read_csv(r'D:\vsproject\pythondataanalysis\heart.csv')
+heart_data = pd.read_csv('heart.csv')
 
 # splitting the features and target
 X = heart_data.drop(columns='target', axis= 1)
